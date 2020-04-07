@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM alpine:latest
 
 MAINTAINER Steffen Fuchs "fuchs@kobold.com"
 
