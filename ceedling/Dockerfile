@@ -6,5 +6,7 @@ RUN apt-get update &&  apt-get install  -y
 RUN apt-get install -y ruby-full  
 RUN apt-get install -y gcc  
 RUN apt-get install -y build-essential
-RUN gem install ceedling 
+RUN gem install ceedling
+
+RUN export LANG="C.UTF-8"
 RUN export LC_ALL="C.UTF-8"
