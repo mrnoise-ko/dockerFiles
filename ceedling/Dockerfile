@@ -7,4 +7,3 @@ RUN apt-get install -y ruby-full
 RUN apt-get install -y gcc  
 RUN apt-get install -y build-essential
 RUN gem install ceedling 
-RUN lsb_release -a 
