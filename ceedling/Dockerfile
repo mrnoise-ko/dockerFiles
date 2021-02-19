@@ -17,4 +17,4 @@ RUN apt-get install -y build-essential
 #RUN curl -sSL https://get.rvm.io | bash -s stable
 #RUN /bin/bash -l -c ". /etc/profile.d/rvm.sh && rvm install 3.0.0 && rvm --default use ruby-3.0.0"
 RUN ruby -v
-#RUN ruby gem install ceedling
+RUN gem install ceedling && ceedling version
