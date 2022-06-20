@@ -25,7 +25,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: .
-          file: ./cppcheck/Dockerfile
+          context: "{{defaultContext}}:cppcheck"
           push: true
           tags: mrnoies/cppcheck:latest
