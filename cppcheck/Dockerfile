@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:jammy
 
 MAINTAINER Steffen Fuchs "fuchs@kobold.com"
 
