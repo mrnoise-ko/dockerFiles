@@ -22,9 +22,23 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build and push
+        name: Build and push Cppcheck
         uses: docker/build-push-action@v3
         with:
           context: "{{defaultContext}}:cppcheck"
           push: true
           tags: mrnoies/cppcheck:latest
+      -
+        name: Build and push Cmake
+        uses: docker/build-push-action@v3
+        with:
+          context: "{{defaultContext}}:cmake-gcc"
+          push: true
+          tags: mrnoies/cmake-gcc:latest
+      -
+        name: Build and push Ceedling
+        uses: docker/build-push-action@v3
+        with:
+          context: "{{defaultContext}}:ceedling"
+          push: true
+          tags: mrnoies/ceedling:latest
