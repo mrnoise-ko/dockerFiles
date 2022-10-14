@@ -42,3 +42,11 @@ jobs:
           context: "{{defaultContext}}:ceedling"
           push: true
           tags: mrnoies/ceedling:latest
+          
+      -
+        name: Build and push QTCrossPlatform
+        uses: docker/build-push-action@v3
+        with:
+          context: "{{defaultContext}}:qtcrossplatform"
+          push: true
+          tags: mrnoies/qtcrossplatform:latest
